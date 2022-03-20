@@ -43,9 +43,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+html,body{
+    width: 375px;
+}
 body{
     font-family: 'Nunito Sans', sans-serif;
-    width: 375px;
 }
 header{
     background-color: #3F3D56;
@@ -55,6 +58,8 @@ header{
     width: 375px;
     flex-wrap: nowrap;
     justify-content: space-between;
+    position: fixed;
+    top: 0
 }
 
 #centro-header {
@@ -83,6 +88,7 @@ header img{
 
 #home{
     background: url(../images/home-image.png);
+    margin-top: 50px;
 }
 
 #home h2{
@@ -94,7 +100,8 @@ header img{
     font-size: 9px;
     text-align: center;
     width: 160px;
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 .item{
@@ -130,9 +137,43 @@ header img{
     display: inline-block;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    position: relative
+    
 }
 
 #lista-itens{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 55px;
+    margin-left: 5px;
+}
+
+footer ul{
+    position: fixed;
+    bottom: 0;
+    width: 375px;
+    height: 46px;
+    background: #3F3D56;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navegacao li img:active,
+.item:active{
+    transform: translateX(0) scale(1.1);
+}
+.navegacao li:nth-child(3){
+    padding-top:6px;
+}
+
+.item:hover{
+    background-color: #ff8b7641 ;
+}
+#cesta{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 100px;
+    left: 90px;
 }
