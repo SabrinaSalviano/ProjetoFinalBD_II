@@ -126,7 +126,7 @@ header img{
     height: 118px;
 }
 .item p:nth-child(2){
-    font-size: 14px;
+    font-size: 11px;
     font-weight: bold;
 }
 .item p:nth-child(3){
@@ -160,10 +160,6 @@ footer ul{
 }
 .navegacao li:nth-child(3){
     padding-top:6px;
-}
-
-.item:hover{
-    background-color: #ff8b7641 ;
 }
 #cesta{
     position: absolute;
