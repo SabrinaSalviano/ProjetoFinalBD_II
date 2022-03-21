@@ -49,6 +49,7 @@ html,body{
 }
 body{
     font-family: 'Nunito Sans', sans-serif;
+    background-color:  #f2f2f2;
 }
 header{
     background-color: #3F3D56;
@@ -89,23 +90,25 @@ header img{
 #home{
     background: url(../images/home-image.png);
     margin-top: 50px;
+    color: #3F3D56;
 }
 
 #home h2{
     font-size: 19px;
     padding-top: 38px;
     padding-left: 5px;
+    font-weight: bold;
 }
 #home p{
-    font-size: 9px;
+    font-size: 10px;
     text-align: center;
     width: 160px;
     padding-top: 20px;
     padding-bottom: 5px;
+    font-weight: bold;
 }
 
 .item{
-    display: flex;
     align-items: center;
     text-align: center;
     background: #FFFFFF;
@@ -113,9 +116,10 @@ header img{
     border-radius: 5px;
     width: 114px;
     height: 165px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px #FF8A76;
-    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
 }
 .item img{
     width: 78px;
@@ -132,14 +136,6 @@ header img{
 .item p:nth-child(4){
     font-size: 14px;   
     font-weight: bold; 
-}
-.item {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    position: relative
-    
 }
 
 #lista-itens{
@@ -159,8 +155,7 @@ footer ul{
     justify-content: space-around;
     align-items: center;
 }
-.navegacao li img:active,
-.item:active{
+.navegacao li img:active{
     transform: translateX(0) scale(1.1);
 }
 .navegacao li:nth-child(3){
@@ -176,4 +171,22 @@ footer ul{
     height: 20px;
     top: 100px;
     left: 90px;
+    background-image: url(../images/cesta.png);
+    background-size: cover;
 }
+
+/* .modal{
+    width: 114px;
+    height: 165px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(255, 255, 255, 0.877);
+    background-image: url(../images/cesta.png);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center;
+    align-items: flex-end;
+    
+} */
