@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../css/feedback.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <script src="../js/mapa.js"></script>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div id="map"></div>
+
+    <div class="card">  
+        <h2>Informe sua localização no mapa</h2>
+        <h2>para registrar o feedback: </h2>
+        <form> 
+            <div>
+                <label> Comentário:</label>
+                <input type="text" id="comentario" required>
+            </div>
+            
+           
+            </div>
+            <button onclick="salvar()"> Salvar feedback  </button>
+            <button class="vizualizar" onclick="VerPonto()"> Ver feedbacks  </button>
+        </form>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+</body>
+
+
+</html>

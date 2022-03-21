@@ -1,0 +1,127 @@
+body {
+    background-color: f6f7f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+#map{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card form div{
+    border: 0.5px solid #000;
+    background-color: #fff;
+    border-radius: 60px;
+    margin-bottom: 20px;
+    height: 120px;
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h2{
+    position: relative;
+    color:#3F3D56;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 1px;
+    font-size: 55px;
+    top: -7%;
+}
+
+.card label{
+    position: relative;
+    color: #151a52;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100%;
+    left: 2%;
+}
+.redirect{
+    position: relative;
+    font-size: 40px;
+    top: -5%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.redirect a{
+    text-decoration: none;
+    color: #FF8A76;
+}
+
+.card form div input{
+    position: relative;
+    font-size: 40px;
+    right: 2%;
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.card form div input:focus{
+    outline: none;
+}
+
+button{
+    position: relative;
+    width: 71%;
+    height: 15%;
+    font-size: 55px;
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+    border-radius:80px;
+    background-color: #3F3D56;
+    color: #f6f7f9;
+    margin-bottom: 5%;
+    top: -7%;
+   
+}
+
+.button vizualizar{
+    position: relative;
+    width: 71%;
+    height: 15%;
+    font-size: 55px;
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+    border-radius:80px;
+    background-color: #3F3D56;
+    color: #f6f7f9;
+   margin-bottom: 10%;
+}

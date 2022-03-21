@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="main">
+
+        <img class="logo" src="img/undraw_add_friends_re_3xte.svg">
+
+    <div class="card">  
+        <h2>Realize seu cadastro</h2>
+        <form>
+            <div>
+                <label> Informe seu nome:</label> 
+                <input type="text" required>
+            </div>
+            <div>
+                <label> Informe seu CPF:</label>
+                <input type="cpf" id="cpf" maxlength="12" required onkeyup="MasK.cpf(this)" >
+            </div>
+            <div>
+                <label> Informe seu email:</label>
+                <input type="email" required >
+            </div>
+            <div>
+                <label> Confirme seu email:</label>
+                <input type="email" required >
+            </div>
+            <div>
+                <label> Informe sua senha:</label>
+                <input type="password" required>
+            </div>
+            <div>
+                <label> Confirme sua senha:</label>
+                <input type="password" required>
+            </div>
+            <button onclick="cadastar">  Confirmar cadastro  </button>
+        </form>
+    </div>
+</body>
+
+<script src="js/cadastro.js"> </script>
+
+</html>
