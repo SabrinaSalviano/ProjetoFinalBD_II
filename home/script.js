@@ -1,5 +1,7 @@
-
 const lista = document.querySelector("#lista-itens");
+const titulo = document.querySelector("#titulo");
+const home = document.querySelector("#home");
+const descricao = document.querySelector("#descricao");
 
 const Populares = [
   {
@@ -164,7 +166,31 @@ function addCarrinho(e){
 }
 
 
-function alterarPagina (arr){
+function alterarPagina (arr, control){
+  
+  switch (control) {
+    case 1:
+      titulo.innerText = "Populares"
+      home.style.backgroundImage = "url('../images/populares.png')"
+      descricao.innerText= "Pra quem é do time dos felinos, proporcionar rações de produtos de qualidade é o básico!"
+      break;
+    case 2:
+      titulo.innerText = "Rações"
+      home.style.backgroundImage = "url('../images/racoes-img.png')"
+      descricao.innerText= "As melhores rações para gatos precisam ter vitaminas e minerais de qualidade"
+      break;
+    case 3:
+      titulo.innerText = "Brinquedos"
+      home.style.backgroundImage = "url('../images/brinquedos.png')"
+      descricao.innerText= "Os brinquedos para gatos ajudam na socialização entre gato e o seu dono"
+      break;
+      case 4:
+        titulo.innerText = "Saúde"
+        home.style.backgroundImage = "url('../images/saude.png')"
+        descricao.innerText= "A saúde dos gatos pode ser um pouco mais sensível do que a de outros pets."
+        break;
+  }
+
   lista.innerHTML = ``
   for (const index in arr) {
     lista.innerHTML += `<div class="item">

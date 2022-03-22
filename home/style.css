@@ -85,10 +85,13 @@ header{
 
 header img{
     width: 32px;
+    margin: 0 10px;
 }
 
 #home{
-    background: url(../images/home-image.png);
+    background-image: url(../images/home-image.png);
+    background-position: 15px;
+    background-repeat: no-repeat;
     margin-top: 50px;
     color: #3F3D56;
 }
@@ -118,8 +121,9 @@ header img{
     height: 165px;
     position: relative;
     display: inline-block;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: center;    
+    margin: 20px 0;
+    
 }
 .item img{
     width: 78px;
@@ -161,6 +165,7 @@ footer ul{
 .navegacao li:nth-child(3){
     padding-top:6px;
 }
+
 #cesta{
     position: absolute;
     width: 20px;
@@ -170,19 +175,3 @@ footer ul{
     background-image: url(../images/cesta.png);
     background-size: cover;
 }
-
-/* .modal{
-    width: 114px;
-    height: 165px;
-    border-radius: 5px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color:rgba(255, 255, 255, 0.877);
-    background-image: url(../images/cesta.png);
-    background-repeat: no-repeat;
-    background-size: 80px;
-    background-position: center;
-    align-items: flex-end;
-    
-} */
