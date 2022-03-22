@@ -13,6 +13,7 @@ const routes = express.Router();
 
 routes.post('/product', ControllerProduct.create);
 routes.get('/product', ControllerProduct.list);
+routes.get('/product/:tipo', ControllerProduct.listByType);
 
 routes.post('/pagamento', controllerPagamento.create);
 routes.get('/pagamento', controllerPagamento.list);

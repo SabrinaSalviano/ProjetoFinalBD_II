@@ -125,3 +125,20 @@ button{
     color: #f6f7f9;
    margin-bottom: 10%;
 }
+
+footer ul{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    background: #3F3D56;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navegacao li img:active{
+    transform: translateX(0) scale(1.1);
+}
+.navegacao li:nth-child(3){
+    padding-top:6px;
+}

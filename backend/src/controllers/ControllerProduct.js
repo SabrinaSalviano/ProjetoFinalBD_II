@@ -9,6 +9,12 @@ module.exports = {
 
         return response.json(product);
     },
+    // Listar pelo tipo
+    async listByType(request,response){
+        const product = await Product.find().where('tipo').equals(request.params.tipo);
+
+        return response.json(product);
+    },
     // Create
     async create(request,response){
         const newProduct = await Product.create(request.body);
