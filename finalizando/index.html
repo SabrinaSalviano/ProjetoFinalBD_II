@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Finalizando Pedido</title>
+</head>
+<body>
+    <header>
+        <span class="seta"><img src="../images/botao-.png" alt="seta"></span>
+        <ul id="centro-header">
+            <li><img src="../images/cat.png" alt="gato"></li>
+            <li>Finalizando</li>
+            <li><img src="../images/cat.png" alt="gato"></li>
+        </ul>
+        <span></span>
+    </header>
+
+    <div class="subtotal">
+        <h2>Subtotal</h2>
+        <h2>Valor</h2>
+    </div>
+    <form>
+        <h2>Entrega</h2>
+        <section>
+            <div class="delivery">
+                <label for="entrega">Delivery</label>
+                <input type="radio" id="entrega" name="entrega" value="Delivery">
+            </div>
+            <div class="deliveryInput">
+                <input type="text" id="fname" name="fname" placeholder="Informe o nome de sua cidade"><br>
+                <input type="text" id="fname" name="fname" placeholder  ="Informe seu endereço">
+            </div>
+        </section>
+        <section class="retiradaLoja">
+            <div class="delivery">
+                <label for="loja">Retirada na loja</label>
+            </div>
+            <div class="lojas">
+                <div class="retiradaInput">
+                    <div class="loja">
+                        <label for="entrega">CatShore loja 1</label>
+                        <p>Praça João Pessoa, n°73
+                            Tel: (99) 9 9999-9999</p>
+                    </div>
+                    <input type="radio" id="entrega" name="entrega" value="Delivery">
+                </div>
+                <div class="retiradaInput">
+                <div class="loja">
+                    <label for="entrega">CatShore loja 2</label>
+                    <p>Praça João Pessoa, n°73
+                        Tel: (99) 9 9999-9999</p>
+                </div>
+                    <input type="radio" id="entrega" name="entrega" value="Delivery">
+                </div>
+            </div>
+            
+        </section>
+        <button id="botao">Finalizar pedido</button>
+    </form>
+    
+</body>
+</html>

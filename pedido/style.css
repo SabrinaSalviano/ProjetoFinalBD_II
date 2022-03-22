@@ -48,11 +48,8 @@ html,body{
     
 }
 body{
-    background-image: url(../images/home-image.png);
-    background-repeat: no-repeat;
-    background-position: 0px 50px;
-    background-color:  #f2f2f2;
-    font-family: 'Nunito Sans', sans-serif; 
+    background-color:  #f2f2f2; 
+    font-family: 'Nunito Sans', sans-serif;
     
 }
 header{
@@ -90,60 +87,25 @@ header{
 #centro-header li:last-child{
     transform: scaleX(-1);
 }
-.lista-carrinho {
-    padding-top: 75px;
-    
-}
-.lista{
-    background-color: white;
-    border: 1px solid #000000;
-    width: 300px;
-    height: 100px;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    font-weight: bold;  
-}
-.elementos-lista {
-    display: grid;
-    grid-template-columns: 1.7fr 1fr;
-    grid-row-gap: 20px;
-    height: 60px;
-}
-.lista img{
-    width: 66px;
-    height: 66px;
-    padding: 0 5px 0 5px;
-}
-.elementos-lista img {
-    width: 15px;
-    height: 15px;
-    padding-left: 34px;
-
-}
-.quantidade{
-    display: flex;
-    justify-content: space-around;
-}
-.quantidade li:nth-child(2n+1){
-    background-color: pink;
-    background: #FF8A76;
-    border-radius: 5px;
-    width: 21px;
-    height: 21px;
+h1{
     text-align: center;
-    line-height: 21px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px;
 }
-.quantidade li:nth-child(2){
-    line-height: 21px;
-    padding: 0 15px;
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
 }
-.elementos-lista p {
-    font-size: 11px;
+section img{
+    width: 45px;
+    height: 45px;
+}
+p{
+    color: grey;
 }
 #botao{
     width: 186px;
