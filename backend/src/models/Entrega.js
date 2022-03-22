@@ -9,12 +9,10 @@ const   EntregaSchema = new mongoose.Schema({
 
     endereco: {
         type: Array,
-        required: true,
     }, 
 
-    retirada: {
+    loja: {
         type:  String,
-        required: true,
     }
 });
 

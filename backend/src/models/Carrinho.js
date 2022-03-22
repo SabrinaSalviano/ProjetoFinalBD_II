@@ -2,11 +2,18 @@ const mongoose = require('mongoose');
 
 const CarrinhoSchema = new mongoose.Schema({
 
-    itens: {
-        type: Array,
+    item: {
+        type: String ,
         required: true,
     },
-
+    quantidade: {
+        type: Number ,
+        required: true,
+    },
+    valorUnitario: {
+        type: Number,
+        required: true,
+    },
     valorTotal: {
         type: Number,
         required: true,

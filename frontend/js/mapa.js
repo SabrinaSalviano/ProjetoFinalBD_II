@@ -37,7 +37,6 @@ function salvar(){
         lat: marker.getPosition().lat(),
         lng: marker.getPosition().lng()
     };
-
     fetch("http://localhost:3001/ponto",{
       method: 'POST',
       headers: {
@@ -46,7 +45,7 @@ function salvar(){
       },
       body: JSON.stringify(obj)
     }).then(response =>{alert('Inserido!')})
-    .catch(error => alert('Falha ao salvar!'));    
+    .catch(error => alert('Falha ao salvar!'));       
 
 }
 

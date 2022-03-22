@@ -26,7 +26,7 @@ async function addToRedis(request, response){
 
 const getSessao = (request, response)=>{
 
-    const user = request.params.id;
+    const user = request.params.email;
         /*client.get(user,(err,res) => {
             if(res != null){
                 const rascunho = JSON.parse(res.toString());
