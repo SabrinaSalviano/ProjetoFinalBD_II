@@ -8,7 +8,7 @@ const   EntregaSchema = new mongoose.Schema({
     },
 
     endereco: {
-        type: Array,
+        type: String,
     }, 
 
     loja: {

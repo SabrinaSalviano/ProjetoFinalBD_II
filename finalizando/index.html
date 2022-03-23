@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Finalizando Pedido</title>
+</head>
+<body>
+    <header>
+        <span class="seta"><a href="../carrinho/index.html"><img src="../images/botao-.png" alt="seta"></a></span>
+        <ul id="centro-header">
+            <li><img src="../images/cat.png" alt="gato"></li>
+            <li>Finalizando</li>
+            <li><img src="../images/cat.png" alt="gato"></li>
+        </ul>
+        <span></span>
+    </header>
+
+    <div class="subtotal">
+        <h2>Subtotal</h2>
+        <h2 id="valor">Valor</h2>
+    </div>
+    <form>
+        <h2>Entrega</h2>
+        <section>
+            <div class="delivery">
+                <label for="entrega">Delivery</label>
+                <input type="radio" id="delivery" name="entrega" value="delivery">
+            </div>
+            <div class="deliveryInput">
+                <textarea type="textarea" id="endereco" name="fname" placeholder="Informe seu endereço, EX: Rua das almas, prédio tal, apartamento tal..."></textarea>
+            </div>
+        </section>
+        <section class="retiradaLoja">
+            <div class="delivery">
+                <label for="loja">Retirada na loja</label>
+            </div>
+            <div class="lojas">
+                <div class="retiradaInput">
+                    <div class="loja">
+                        <label for="entrega">CatShore loja 1</label>
+                        <p>Praça João Pessoa, n°73
+                            Tel: (99) 9 9999-9999</p>
+                    </div>
+                    <input type="radio" id="loja1" name="entrega" value="loja 1">
+                </div>
+                <div class="retiradaInput">
+                <div class="loja">
+                    <label for="entrega">CatShore loja 2</label>
+                    <p>Praça João Pessoa, n°73
+                        Tel: (99) 9 9999-9999</p>
+                </div>
+                    <input type="radio" id="loja2" name="entrega" value="loja 2">
+                </div>
+            </div>
+            
+        </section>
+        <button id="botao" onclick="FinalizarPedido()"><a style="text-decoration: none; color: #fff" href="../pagamento/index.html">Finalizar pedido</a></button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

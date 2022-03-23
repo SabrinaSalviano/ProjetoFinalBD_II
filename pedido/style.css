@@ -2,7 +2,7 @@
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, acronym, address, big, cite, code,
+a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -43,24 +43,29 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 html,body{
     width: 375px;
+    
 }
 body{
+    background-color:  #f2f2f2; 
     font-family: 'Nunito Sans', sans-serif;
-    background-color:  #f2f2f2;
+    
 }
 header{
     background-color: #3F3D56;
     height: 50px;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 375px;
     flex-wrap: nowrap;
     justify-content: space-between;
-    position: fixed;
-    top: 0
+}
+.seta img{
+    width: 32px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
 }
 
 #centro-header {
@@ -82,97 +87,36 @@ header{
 #centro-header li:last-child{
     transform: scaleX(-1);
 }
-
-header img{
-    width: 32px;
-    padding: 5px;
-    margin: 0 10px;
-}
-
-#home{
-    background-image: url(../images/home-image.png);
-    background-position: 15px;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    color: #3F3D56;
-}
-
-#home h2{
-    font-size: 19px;
-    padding-top: 38px;
-    padding-left: 5px;
-    font-weight: bold;
-}
-#home p{
-    font-size: 10px;
+h1{
     text-align: center;
-    width: 160px;
-    padding-top: 20px;
-    padding-bottom: 5px;
     font-weight: bold;
+    font-size: 20px;
+    padding: 30px;
 }
-
-.item{
-    align-items: center;
-    text-align: center;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px #FF8A76;
-    border-radius: 5px;
-    width: 114px;
-    height: 165px;
-    position: relative;
-    display: inline-block;
-    justify-content: center;    
-    margin: 20px 0;
-    
-}
-.item img{
-    width: 78px;
-    height: 118px;
-}
-.item p:nth-child(2){
-    font-size: 11px;
-    font-weight: bold;
-}
-.item p:nth-child(3){
-    font-size: 11px;    
-    color: #7e7e7e;
-}
-.item p:nth-child(4){
-    font-size: 14px;   
-    font-weight: bold; 
-}
-
-#lista-itens{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 55px;
-    margin-left: 5px;
-}
-
-footer ul{
-    position: fixed;
-    bottom: 0;
-    width: 375px;
-    height: 46px;
-    background: #3F3D56;
+section{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    font-size: 12px;
+    font-weight: bold;
 }
-.navegacao li img:active{
-    transform: translateX(0) scale(1.1);
+section img{
+    width: 45px;
+    height: 45px;
 }
-.navegacao li:nth-child(3){
-    padding-top:6px;
+p{
+    color: grey;
 }
-
-.cesta{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 100px;
-    left: 90px;
-    background-image: url(../images/cesta.png);
-    background-size: cover;
+#botao{
+    width: 186px;
+    height: 56px;
+    background: #FF8A76;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+    position: fixed;
+    left: 87px;
+    bottom: 10px;
+    color: white;
+    font-size: 20px;
 }

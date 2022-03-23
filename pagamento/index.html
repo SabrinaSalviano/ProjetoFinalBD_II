@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagamento</title>
+</head>
+<body>
+    <header>
+        <span class="seta"><a href="../frete/index.html"><img src="../images/botao-.png" alt="seta"></a></span>
+        <ul id="centro-header">
+            <li><img src="../images/cat.png" alt="gato"></li>
+            <li>Finalizando</li>
+            <li><img src="../images/cat.png" alt="gato"></li>
+        </ul>
+        <span></span>
+    </header>
+    <section class="container">
+        <ul>
+            <li class="card">Pix</li>
+            <li class="card">Cartão</li>
+            <li class="card">Picpay</li>
+            <li class="card">Boleto</li>
+        </ul>
+        <div class="info">
+            <div>
+                <label> Número do cartão:</label> 
+                <input type="text" required id="numero" placeholder="N do cartão">
+            </div>
+            <div>
+                <label> Parcelamentos diponíveis:</label>
+                <select id="parcela">
+                    <option>1x de R$100</option>
+                    <option>2x de R$52</option>
+                    <option>3x de R$34</option>
+                    <option>4x de R$27</option>
+                </select>
+            </div>
+            <div>
+                <label> Nome impresso no cartão:</label>
+                <input type="text" required id="nome" placeholder="Nome impresso no cartão">
+            </div>
+            <div>
+                <label> validade:</label>
+                <input type="text" placeholder="MM/AA" required id="validade">
+            </div>
+            <div>
+                <label> cvv:</label>
+                <input type="text" required id="cvv" placeholder="Código CVV ex:123">
+            </div>
+        </div>
+    </section>
+    <a href="../pedido/index.html"><button id="botao" onclick="Pagar()">Finalizar compra</button></a>
+    <script src="./script.js"></script>
+</body>

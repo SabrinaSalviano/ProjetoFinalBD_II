@@ -12,27 +12,29 @@
     
     <div class="main">
 
-        <img class="logo" src="img/undraw_access_account_re_8spm.svg">
+        <img class="logo" src="../img/undraw_access_account_re_8spm.svg">
 
-    <div class="card">  
+    <div class="card"> 
         <h2>Bem vindo, efetue o login para</h2>
         <h2>realizar compras: </h2>
-        <form>
+        <div class="form"> 
             <div>
                 <label> Email:</label>
-                <input type="email" requ>
+                <input type="email" required id="email">
             </div>
             
             <div>
                 <label> Senha:</label>
-                <input type="password" required>
+                <input type="password" required id="senha">
             </div>
            
             </div>
-            <button> Login  </button>
+        </div>
+            
+            <button onclick="Login()"> Login </button>
             <label class="redirect">Não tem conta ? <a href="cadastro.html">Cadastre-se</a></label>
-        </form>
     </div>
-</body>
+    <script src="../js/login.js"></script>
 
+</body>
 </html>

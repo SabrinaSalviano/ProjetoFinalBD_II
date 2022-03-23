@@ -9,19 +9,19 @@
 </head>
 <body>  
     <header>
-        <img src="../images/porta.png" alt="Voltar">
+        <a href="../frontend/html/login.html"><img src="../images/porta.png" alt="Voltar"></a>
         <ul id="centro-header">
             <li><img src="../images/cat.png" alt="gato"></li>
             <li>Cat Store</li>
             <li><img src="../images/cat.png" alt="gato"></li>
         </ul>
-        <img src="../images/carrinho.png" alt="Deslogar">
+        <a href="../carrinho/index.html"><img src="../images/carrinho.png" alt="Deslogar"></a>
     </header>
 
     <section id="home">
         <div>
-            <h2>Populares</h2>
-            <p>Pra quem é do time dos felinos, proporcionar rações de produtos de qualidade é o básico!</p>
+            <h2 id="titulo">Populares</h2>
+            <p id="descricao">Pra quem é do time dos felinos, proporcionar rações de produtos de qualidade é o básico!</p>
         </div>
     </section>
 
@@ -30,10 +30,11 @@
      </section>
     <footer>
         <ul class="navegacao">
-            <li><img src="../images/casa.png" alt="Home" onclick="alterarPagina(Populares)"></li>
-            <li><img src="../images/racao.png" alt="Rações" onclick="alterarPagina (Racoes)"></li>
-            <li><img src="../images/brinquedo.png" alt="Brinquedos" onclick="alterarPagina (Brinquedos)"></li>
-            <li><img src="../images/medicamento.png" alt="Medicamentos" onclick="alterarPagina (Medicamentos)"></li>
+            <li><img src="../images/casa.png" alt="Home" onclick="alterarPagina(Populares,1)"></li>
+            <li><img src="../images/racao.png" alt="Rações" onclick="alterarPagina (Racoes,2)"></li>
+            <li><img src="../images/brinquedo.png" alt="Brinquedos" onclick="alterarPagina (Brinquedos,3)"></li>
+            <li><img src="../images/medicamento.png" alt="Medicamentos" onclick="alterarPagina (Medicamentos,4)"></li>
+            <li><a href="../frontend/html/feedback.html"><img src="../images/feedback.png" alt="Feedback"></a></li>
         </ul>
     </footer>
     <script src="script.js"></script>

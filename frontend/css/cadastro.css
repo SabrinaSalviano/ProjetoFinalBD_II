@@ -35,7 +35,7 @@ body {
     align-items: center;
 }
 
-.card form {
+.card .form {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ body {
     flex-direction: column;
 }
 
-.card form div{
+.card .form div{
     border: 0.5px solid #000;
     background-color: #fff;
     border-radius: 50px;
@@ -73,7 +73,7 @@ body {
     left: 2%;
 }
 
-.card form div input{
+.card .form div input{
     position: relative;
     font-size: 40px;
     right: 2%;
@@ -83,7 +83,7 @@ body {
     text-align: center;
 }
 
-.card form div input:focus{
+.card .form div input:focus{
     outline: none;
 }
 

@@ -6,7 +6,6 @@ const PagamentoSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-
     nmrCartao: {
         type: Number,
     },
@@ -17,7 +16,7 @@ const PagamentoSchema = new mongoose.Schema({
         type: String,
     },
     valorP: {
-        type: Number,
+        type: String,
     },
     cvv: {
         type: Number,
