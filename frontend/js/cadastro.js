@@ -29,7 +29,7 @@ function Cadastrar() {
 
             alert("Inserido com sucesso");
             
-            document.location.href = "///home/sabrina/ProjetoFinalBD_II/frontend/html/login.html";
+            // document.location.href = "///home/sabrina/ProjetoFinalBD_II/frontend/html/login.html";
         }
         else {
             alert("Email ou senha não batem");

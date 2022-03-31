@@ -15,7 +15,7 @@ async function addToRedis(request, response){
     try{
         if(email != ''){
             client.SETEX(email, 7200, senha);
-            return response.status(201).send('Logado com sucesso!');
+            return response.status(200).send('Logado com sucesso!');
         }else{
             response.status(400).send('Falha ao logar');
         }
