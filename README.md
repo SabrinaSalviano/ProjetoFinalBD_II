@@ -33,3 +33,7 @@ Na data de 31/03/2022 adicionamos a este projeto testes de sistemas. No momento,
 ```Cypress```  e o ``` Live Server```  do ``` Visual Studio Code``` ;
 
 Como colaboradores de implementação desta etapa temos eu, ``` Sabrina Salviano``` , ``` William Jefferson```  e ``` Wotson Sula``` .
+
+## Considerações sobre o projeto 
+
+Infelizmente algumas partes especifícas do nosso projeto ainda não funcionam no front, tivemos alguns problemas na hora de integrar este sistema e você vai observar isso caso clone nosso repositório para teste. Devido a um prazo relativamente curto para o desenvolvimento completo deste e levando em consideração que o projeto é grande para um projeto de avaliação de uma disciplina. O backend fuciona perfeitamente, mas para isso os bancos citados precisam estar em execução localmente. Como este projeto foi desenvolvido para uma avaliação de disciplina, não houve a necessidade de hospedagem.
