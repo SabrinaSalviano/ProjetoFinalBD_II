@@ -2,7 +2,7 @@
 
 Nosso projeto disz respeito a um sistema de compras pet shop via app voltado para felinos. O projeto surgiu a partir de um protótipo criado para outra disciplina no período 2021.1. Como colaboradores e desenvolvedores do protótipo temos eu, ``` Sabrina Salviano```  e ``` Wotson Sula``` .
 
-## Os requisitos básicos deste projeto são
+## Os requisitos básicos deste projeto são:
 
 ```
 ● Ser desenvolvido para web;
